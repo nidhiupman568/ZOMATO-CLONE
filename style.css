@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+header {
+    background-image: url('./assets/icons/header-image.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    padding: 2rem;
+    gap: 2rem;
+    color: white;
+}
+
+.navbar p {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-center {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6.5%;
+}
+
+.header-center h1 {
+    font-size: 5.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: -1.2rem;
+}
+
+.header-center p {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* dispay none in small screens */
+.empty-container {
+    color: white;
+    border: 1px solid transparent;
+}
+
+.empty-container p {
+    margin-bottom: 15rem;
+    color: transparent;
+}
+
+/* hero section styling */
+.hero-section {
+    margin-top: 5rem;
+}
+
+.hero-section-text-content-heading {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.hero-section-text-content-sub-heading {
+    margin-bottom: 4rem;
+}
+
+.hero-section-text-content-sub-heading p {
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(105, 105, 105);
+    line-height: 3rem;
+}
+
+.flag {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: white;
+}
+
+/* states container */
+.states-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 8rem;
+    justify-content: center;
+}
+
+.states-restaurant {
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.19);
+    padding: 20px 18px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.states-restaurant p {
+    font-size: 1.3rem;
+}
+
+.states-restaurant img {
+    width: 15px;
+}
+
+.states-restaurant:hover {
+    box-shadow: 1.8px 1.8px 9px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+footer {
+    margin-top: 4rem;
+    background-color: rgb(248, 248, 248);
+    padding: 0.2rem 8rem 0;
+}
+
+.footer-header {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.footer-img {
+    width: 10rem;
+    height: 2rem
+}
+
+.footer-header-drop-down {
+    display: flex;
+    gap: 2rem;
+    height: 42px;
+}
+
+.show-language,
+.show-country {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: auto;
+    cursor: pointer;
+    padding: 9px;
+}
+
+.show-language-on-language-box {
+    font-size: 1rem;
+}
+
+.countries {
+    position: relative;
+}
+
+/* country drop down */
+.countries-drop-down {
+    position: relative;
+    top: -215px;
+    right: 310px;
+    width: 0.1rem;
+    padding: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.countries-drop-down-container {
+    position: relative;
+    bottom: 45px;
+    right: -15px;
+    width: 36rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 145px);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+}
+
+.triangular-box-1 {
+    position: absolute;
+    right: 210px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+}
+
+.flag-with-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 7px;
+    z-index: 1;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.flag-with-name:hover {
+    background-color: rgb(248, 248, 248);
+}
+
+.languages img,
+.countries img {
+    width: 1.3rem;
+}
+
+/* languages drop down container  */
+.languages {
+    position: relative;
+}
+
+.languages-drop-down {
+    display: none;
+}
+
+.languages-drop-down-container {
+    position: absolute;
+    left: -32px;
+    bottom: 52px;
+    width: 10rem;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+    padding: 0px 4px 5px 4px;
+}
+
+.triangular-box-2 {
+    position: absolute;
+    right: 70px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+}
+
+.language-with-name {
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+.language-with-name p {
+    font-size: 1.2rem;
+}
+
+
+.language-with-name:hover {
+    background-color: rgb(248, 248, 248);
+}
+
+/* footer hero section */
+.footer-hero-section {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+
+}
+
+.footer-heading {
+    font-family: monospace;
+    font-size: 0.9rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+
+
+/* social media */
+.download img,
+.social-links-container img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    width: 9.8rem;
+    background-color: rgb(35, 87, 87);
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.download img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.download-content p,
+.download-content h3 {
+    font-size: 0.8rem;
+}
+
+.footer-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.horizontal-line {
+    margin: 3rem 0rem 2.5rem;
+    display: flex;
+    width: 100%;
+}
+
+.last-content {
+    color: rgb(105, 105, 105);
+    margin-bottom: 2rem;
+}
+
+/* overlay */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f3f3;
+    z-index: 5;
+    display: none;
+}
+
+#overlay p {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* media queries */
+
+
+@media all and (width<=500px) {
+    header {
+        height: 450px;
+    }
+
+    .header-center h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.1px;
+    }
+
+    .header-center p {
+        font-size: 1.3rem;
+    }
+
+    /* hero section */
+    .hero-section-text-content-heading {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-section-text-content-sub-heading p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /* states container */
+    .states-container {
+        padding: 0 0rem;
+    }
+
+
+    .states-restaurant {
+        height: 50px;
+        width: 90%;
+    }
+
+    .states-restaurant p {
+        font-size: 0.9rem;
+    }
+
+    .states-restaurant img {
+        width: 15px;
+    }
+
+    /* footer */
+    footer {
+        margin-top: 3rem;
+        padding: 0.2rem 0% 0%;
+    }
+
+
+    .footer-header {
+        margin-top: 1rem;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .footer-img {
+        margin-bottom: 24px;
+    }
+
+    .footer-header-drop-down {
+        flex-wrap: wrap;
+    }
+
+    .countries-drop-down-container {
+        bottom: 265px;
+        right: -260px;
+        margin-left: 40px;
+        width: 18rem;
+        grid-template-columns: repeat(2, 145px);
+    }
+
+    .social-links {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-heading {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 25px 0 15px;
+        letter-spacing: 5px;
+    }
+
+    .social-links-container a {
+        margin-right: 20px;
+    }
+
+    .download-container {
+        display: flex;
+        justify-content: space-around;
+        order: -1;
+    }
+
+    .download {
+        width: 7rem;
+        padding: 0.5rem;
+        margin-top: 35px;
+    }
+
+    .download img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .download-content p,
+    .download-content h3 {
+        font-size: 0.6rem;
+    }
+
+    .footer-hero-section {
+        margin-top: 1rem;
+    }
+
+    .footer-footer {
+        padding: 0 10px;
+    }
+
+    /* overlay */
+    #overlay p {
+        font-size: 1.5rem;
+    }
+
+}

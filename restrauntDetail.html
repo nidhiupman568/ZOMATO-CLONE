@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="restaurant-page-title"></title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/zomato_favicon.jpg">
+    <link rel="stylesheet" href="restrauntDetail.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="left-header">
+            <img src="./assets/icons/footer-image.avif" alt="" class="zomato-logo">
+            <div class="search-locality">
+                <div class="location">
+                    <div class="location-container">
+                        <img src="./assets/icons/current-location.png" alt="current-location" class="location-img">
+                        <p class="city-name"></p>
+                    </div>
+                    <div class="down-arrow">
+                        <img src="./assets/icons/down-filled-triangular-arrow.png" alt="down-arrow"
+                            class="down-arrow-img">
+                    </div>
+                </div>
+                <img src="./assets/icons/vertical-line.png" alt="" class="vertical-line">
+                <div class="dish">
+                    <div class="dish-container">
+                        <img src="./assets/icons/search (2).png" alt="search-icon">
+                        <input type="text" placeholder="Search for cuisine or a dish" class="search-input">
+                    </div>
+                    <div class="search-dish-container">
+                        <!-- <div class="search-restaurant-container-img-details">
+                            <img src="./assets/food/karchi.avif" alt="" class="search-restaurant-img">
+                            <div class="search-restaurant-container-details">
+                                <p class="search-restaurant-heading">Bikanervala</p>
+                                <div class="search-restaurant-rating-container">
+                                    <b class="search-restaurant-rating">4.3</b>
+                                    <p class="search-star-icon" style="margin: 0px 0px 3px 2px;">☆</p>
+                                </div>
+                                <div class="search-restaurant-order-now">
+                                    <p class="order-now">Order now</p>
+                                    <img src="./assets/icons/red-right-arrow.png" alt="" style="width: 1.1rem;">
+                                </div>
+                                <p class="search-restaurant-deliverytime">Delivery in 45 mins</p>
+
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-header">
+            <p>Log in</p>
+            <p>Sign up</p>
+        </div>
+        <div class="right-header-sm">
+            <div class="sm-app">
+                <p>Use App</p>
+            </div>
+            <img src="./assets/icons/profile.png" alt="profile-pic">
+        </div>
+    </header>
+
+    <div class="extra-space-top">
+        hi
+    </div>
+
+    <!-- sub header -->
+    <div class="sub-header-sm">
+        <div class="search-locality-sm">
+            <div class="location-sm">
+                <div class="location-container">
+                    <img src="./assets/icons/current-location.png" alt="current-location" class="location-img-sm">
+                    <b class="city-name-sm"></b>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-container-sm">
+                    <img src="./assets/icons/search (2).png" alt="search-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dish-sm">
+        <div class="dish-container-sm">
+            <img src="./assets/icons/search (2).png" alt="search-icon">
+            <input type="text" placeholder="Search for restaurant, cuisine or a dish" class="search-input-sm">
+        </div>
+    </div>
+
+    <!-- detect current location -->
+    <div class="detect-current-location">
+        <img src="./assets/icons/detect-current-location.png" alt="" class="current-location-img">
+        <div class="current-location-container">
+            <p class="detect-current-location-text">Detect current location</p>
+            <p class="gps">Using GPS</p>
+        </div>
+    </div>
+
+    <!-- bread crumb -->
+    <div class="bread-crumb">
+        <div class="bread-cumb-container">
+            <p><a href="index.html">Home </a> / <a href="index.html"> India </a> /
+                <a onclick="window.history.back()" class="city-name-in-breadcrumb" style="font-weight: 100;"></a> /
+                <b class="restaurant-name-in-breadcrumb" style="font-weight: 100;"></b>
+            </p>
+        </div>
+    </div>
+
+    <!-- restraunt image section -->
+    <section class="restaurant-images">
+        <div class="restaurant-images-container">
+
+        </div>
+    </section>
+
+    <!-- hotel detail section -->
+    <section class="hotel-detail">
+        <div class="hotel-detail-container">
+            <div class="hotel-name-and-reviews">
+                <div class="hotel-name-container">
+                    <p class="hotel-name">Shaj kahan</p>
+                </div>
+                <div class="review-container">
+                    <div class="dining-rating-review-container">
+                        <div class="dining-rating-container">
+                            <h6 class="dining-rating">3.9</h6>
+                            <img src="./assets/icons/star.png" alt="" style="width: 15px;">
+                        </div>
+                        <div class="dining-review-container">
+                            <p>286</p>
+                            <p class="bg-screen">Dining Reviews</p>
+                            <p class="sm-screen">Dining</p>
+                        </div>
+                    </div>
+                    <div class="delivery-rating-review-container">
+                        <div class="delivery-rating-container">
+                            <h6 class="delivery-rating">3.8</h6>
+                            <img src="./assets/icons/star.png" alt="" style="width: 15px;">
+                        </div>
+                        <div class="delivery-review-container">
+                            <p>28.6K</p>
+                            <p class="bg-screen">Delivery Reviews</p>
+                            <p class="sm-screen">Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisines-container">
+                <p class="cuisines">North Indian, Rolls, Biryani</p>
+            </div>
+            <div class="location-container">
+                <p class="city-location">Agra</p>
+            </div>
+            <div class="more-info-link-container">
+                <div class="more-info-link">
+                    <p>More Info</p>
+                    <img src="./assets/icons/red-right-arrow.png" alt="">
+                </div>
+            </div>
+            <div class="timings-container">
+                <div class="timings"> <b class="open-now-text">Open Now </b>
+                    <b class="timings-text"> &nbsp; - &nbsp; 11am - 11pm (Today)</b>
+                </div>
+            </div>
+            <div class="direction-bookmark-share-container">
+                <div class="direction-container">
+                    <img src="./assets/icons/direction.png" alt="direction-button" style="width: 20px;">
+                    <p>Direction</p>
+                </div>
+                <div class="bookmark-container">
+                    <img src="./assets/icons/bookmark.png" alt="bookmark-button" style="width: 20px;">
+                    <p>Bookmark</p>
+                </div>
+                <div class="share-container">
+                    <img src="./assets/icons/share.png" alt="share-button" style="width: 20px;">
+                    <p>Share</p>
+                </div>
+            </div>
+            <div class="restaurant-options-container">
+                <div class="restaurant-options">
+                    <p class="overview">Overview</p>
+                    <p class="order-online">Order Online</p>
+                    <p class="reviews">Reviews</p>
+                    <p class="photos">Photos</p>
+                    <p class="menu">Menu</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <!-- section restaurant options -->
+    <section class="restaurant-options-section">
+        <div class="order-online-section">
+            <div class="order-online-container">
+                <div class="order-online-options" id="order-online-options-id">
+                    <!-- <p class="cuisine-name">xyz <b class="cuisine-count">(3)</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">(3)</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">(3)</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">(3)</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">(3)</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">3</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">3</b></p>
+                    <p class="cuisine-name">xyz <b class="cuisine-count">3</b></p> -->
+                </div>
+                <div class="order-online-dishes">
+                    <div class="order-online-heading">
+                        <h3>Order Online</h3>
+                        <div class="order-online-search-container">
+                            <img src="./assets/icons/search (2).png" alt="search-icon">
+                            <input type="text" placeholder="Search within menu" class="search-in-menu">
+                            <img src="./assets/icons/close-button.jpg" alt="" style="width: 25px;">
+                        </div>
+                    </div>
+                    <div class="track-order">
+                        <div class="track-order-container">
+                            <img src="./assets/icons/close-button.jpg" alt="">
+                            <p>Live track your order </p>
+                        </div>
+                        <div class="time-container">
+                            <img src="./assets/icons/close-button.jpg" alt="" style="width: 25px">
+                            <p>45 min</p>
+                        </div>
+                    </div>
+                    <div class="coupons-container">
+                        <div class="hungry-coupon">
+                            <b>40% OFF up to Rs 80</b>
+                            <p>use code HUNGRY</p>
+                        </div>
+                        <div class="walletonzom-coupon">
+                            <b>Rs 20 - Rs 300 cashback</b>
+                            <p>use code WALLETONZOM</p>
+                        </div>
+                        <div class="crednew-coupon">
+                            <b>50% OFF up to Rs 100</b>
+                            <p>use code CREDNEW</p>
+                        </div>
+                    </div>
+                    <div class="veg-only-container">
+                        <input type="checkbox" name="" id="vegonly">
+                        <label for="vegonly">veg only</label>
+                    </div>
+                    <div class="online-dishes">
+                        <!-- <div class="online-dish-container"> -->
+                        <!-- <h3 class="left-cuisine-name"></h3>
+                            <div class="dish-container">
+                                <div class="dish-img-container">
+                                    <img src="./assets/food/dessert/Rasgulla.avif" alt="dish-img" class="dish-img">
+                                    <div class="add-button">
+                                        <b style="font-weight: 100;">Add</b>
+                                        <p>+</p>
+                                    </div>
+                                    <div class="add-remove-button">
+                                        <p>+</p>
+                                        <b style="font-weight: 100;" class="count">1</b>
+                                        <p style="margin-bottom: 0.3rem;">-</p>
+                                    </div>
+                                </div>
+
+                                <div class="dish-details">
+                                    <p class="dishname">thLI</p>
+                                    <div class="rating-votes">
+                                        <div class="rating">
+                                            <img src="./assets/icons/half-yellow-star.png" alt="">
+                                            <p>No rating</p>
+                                        </div>
+                                        <p class="votes">550 votes</p>
+                                    </div>
+                                    <p class="dish-cost">
+                                        Rs 160
+                                    </p>
+                                    <p class="dish-made-from">
+                                        Dal Fry+Shahi Paneer+Mix Veg+5 Butter Roti+Salad+Raita+Pulao+Ladoo+Papad
+                                    </p>
+                                    <div class="add-button">
+                                        <b style="font-weight: 100;">Add</b>
+                                        <p>+</p>
+                                    </div>
+                                    <div class="add-remove-button">
+                                        <p>+</p>
+                                        <b style="font-weight: 100;" class="count">1</b>
+                                        <p style="margin-bottom: 0.3rem;">-</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- item added sections -->
+    <section class="items-added-section">
+        <div class="items-added-container">
+            <div class="items-added">
+                <p id="total-items-count"></p>
+                <img src="./assets/icons/items added right arrow.png" alt="items-right-arrow"
+                    style="width: 0.9rem; height: 0.9rem;">
+            </div>
+        </div>
+    </section>
+
+    <!-- cart sections  -->
+    <section class="cart-section">
+        <div class="cart-section-container">
+            <div class="cart-restraunt-name-close-container">
+                <img src="./assets/icons/left-arrow-in-circular-button-black-symbol.png" alt="" style="cursor: pointer;"
+                    class="close-cart">
+                <h1 class="cart-restraunt-name"></h1>
+            </div>
+            <div class="cart-total-container">
+                <!-- <div class="cart-total">
+                    <div class="cart-img">
+                        <img src="./assets/food/dessert/Rasgulla.avif" alt="dish-img" class="cart-dish-img">
+                    </div>
+                    <div class="cart-details-container">
+                        <div class="cart-details">
+                            <p class="cart-dish-name">Rasgulla special</p>
+                            <div class="cart-rating-votes">
+                                <div class="cart-rating">
+                                    <img src="./assets/icons/half-yellow-star.png" alt="" width="11.2rem">
+                                    <p style="display: none;">No rating</p>
+                                </div>
+                                <p class="cart-votes">550 votes</p>
+                            </div>
+                            <div class="cart-dish-cost">
+                                ₹ 160
+                            </div>
+                        </div>
+                        <div class="cart-add-remove-button">
+                            <p>+</p>
+                            <b style="font-weight: 100;" class="cart-count">1</b>
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="total-amount-container">
+                <h4>Bill Summary</h4>
+                <div class="item-total-container">
+                    <p>Item total : </p>
+                    <div class="add-symbol-container">
+                        <p>₹</p>
+                        <p id="item-total">1000.00</p>
+                    </div>
+                </div>
+                <div class="gst-charges-container">
+                    <p>GST & Restaurant Charges : </p>
+                    <div class="add-symbol-container">
+                        <p>₹</p>
+                        <p id="item-gst">58.20</p>
+                    </div>
+                </div>
+                <div class="delivery-charges-container">
+                    <p>Delivery Charges : </p>
+                    <div class="delivery-charges add-symbol-container">
+                        <p id="rs-sign">₹</p>
+                        <p id="delivery-charges">0</p>
+                    </div>
+                    <div class="free-delivery-container">
+                        <p>Free Delivery</p>
+                    </div>
+                </div>
+                <div class="feeding-India-donation-container">
+                    <p>Feeding India donation : </p>
+                    <div class="add-symbol-container">
+                        <p>₹</p>
+                        <p id="feeding-India-donation">1</p>
+                    </div>
+                </div>
+                <div class="coupon-container">
+                    <p style="text-decoration: underline; cursor: pointer;" id="coupon-link">Coupon : </p>
+                    <div class="add-symbol-container">
+                        <p>₹</p>
+                        <p id="coupon-container">50</p>
+                    </div>
+                </div>
+                <div class="grand-total-container"
+                    style="border-top: 1px dashed grey; padding-top: 0.5rem; margin-bottom: 0.5rem;">
+                    <p>Grand Total : </p>
+                    <div class="add-symbol-container">
+                        <p>₹</p>
+                        <p id="grand-total" style="font-weight: 600;">00.00</p>
+                    </div>
+                </div>
+                <div class="cart-order">
+                    <p id="place-order">Place order</p>
+                    <p id="modify-order">Modify order</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-coupons-section">
+            <div class="cart-coupons">
+                <div class="cart-coupons-container">
+                    <img src="./assets/icons/close-button.jpg" alt=""
+                        style="width: 1rem; border-radius: 2px; margin: -0.3rem 0 0.6rem 0; cursor: pointer;"
+                        class="close-coupon">
+                    <div class="cart-hungry-coupon">
+                        <b>40% OFF up to ₹80</b>
+                        <p>use code HUNGRY</p>
+                        <p style="font-size: 0.7rem;">Min. Cart value should be ₹300</p>
+                    </div>
+                    <div class="cart-walletonzom-coupon">
+                        <b>30% OFF</b>
+                        <p>use code WALLETONZOM</p>
+                        <p style="font-size: 0.7rem;">No Min. Cart value required</p>
+                    </div>
+                    <div class="cart-crednew-coupon">
+                        <b>10% OFF</b>
+                        <p>use code CREDNEW</p>
+                        <p style="font-size: 0.7rem;">Min. Cart value should be ₹200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order placed section -->
+    <section class="order-placed-section">
+        <div class="order-placed-container">
+            <div class="order-placed">
+                <p>Order placed successfully <img src="./assets/icons/success-filled.png" alt=""
+                        style="width: 2rem; height: 2rem; margin-bottom: -0.3rem;">
+                </p>
+            </div>
+            <p class="disclaimer"><i>Order modifications allowed only for next 2 mins...</i></p>
+        </div>
+    </section>
+
+    <!-- order placed sound -->
+    <audio src="./assets/sounds/zomato-order-delivery.mp3" id="order-placed-sound"></audio>
+
+    <!-- notification section -->
+    <div class="notification-section">
+        <div class="notification-container">
+            <div class="notification-message">
+                <p id="notification"></p>
+                <img src="" alt="" id="notificationImg">
+            </div>
+            <div class="notification-thought">
+                <p id="notificationThought">
+
+                </p>
+            </div>
+        </div>
+        <div class="notification-tooltip">
+
+        </div>
+    </div>
+
+    <!-- overlay -->
+    <div id="overlay"></div>
+
+    <script src="restrauntDetail.js"></script>
+</body>
+
+</html>
