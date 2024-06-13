@@ -73,7 +73,7 @@ This project is a clone of Zomato built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ### How to Use
-1. Clone the repository: `https://nidhiupman568.github.io/ZOMATO-CLONE/`
+1. Clone the repository: `https://github.com/nidhiupman568/ZOMATO-CLONE.git`
 2. Open `index.html` in your web browser to view the application.
 
 
