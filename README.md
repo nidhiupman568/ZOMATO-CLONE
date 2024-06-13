@@ -1,19 +1,17 @@
-Certainly! Here's a refined version of the information you provided, suitable for your GitHub README file:
 
----
 
-## Zomato Clone
+# Zomato Clone
 
 This project is a clone of Zomato built using HTML, CSS, and JavaScript.
 
-### Features
+## Features
 
-#### Home Page
+### Home Page
 - **Navigation**: Includes options to add a restaurant, login, or sign up.
 - **City-wise Restaurant Selection**: Allows users to choose restaurants based on their city.
 - **Footer**: Standard footer at the bottom of the page.
 
-
+#### Screenshots(Output)
 ![HOME PAGE 1](https://github.com/nidhiupman568/ZOMATO-CLONE/assets/130860182/b49e233c-4a48-4c2d-889b-a0e52a478018)
 
 ![HOME PAGE 2](https://github.com/nidhiupman568/ZOMATO-CLONE/assets/130860182/4a3da77b-b727-43a7-8ebc-27d7ba20e5f6)
@@ -34,11 +32,11 @@ This project is a clone of Zomato built using HTML, CSS, and JavaScript.
 
 
 
-#### Search Page
+### Search Page
 - **Location Tracking**: Users can use GPS to track their location or use a search bar to find restaurants based on location preferences.
 - **Filters**: Users can apply filters such as vegetarian/non-vegetarian options and restaurant ratings.
 - **Footer**: Same standard footer as on the Home Page.
-
+#### Screenshots(Output)
 ![SEARCH PAGE 1](https://github.com/nidhiupman568/ZOMATO-CLONE/assets/130860182/d203a482-f379-4518-9ce3-4b0510a64f58)
 
 
@@ -49,12 +47,12 @@ This project is a clone of Zomato built using HTML, CSS, and JavaScript.
 
 
 
-#### Restaurant Page
+### Restaurant Page
 - **Menu Display**: Displays all dishes available at the chosen restaurant, including prices and ratings.
 - **Ordering**: Users can add dishes to their cart and view the total bill before placing their order.
 - **Order Placement**: Clicking "Place Order" completes the order process successfully.
 
-
+#### Screenshots(Output)
 
 ![RESTAURANT PAGE 1](https://github.com/nidhiupman568/ZOMATO-CLONE/assets/130860182/57df0534-0ca3-4b58-bdfc-96c2cbe0ca6a)
 
@@ -75,21 +73,14 @@ This project is a clone of Zomato built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ### How to Use
-1. Clone the repository: `git clone https://github.com/your-username/repository-name.git`
+1. Clone the repository: `https://nidhiupman568.github.io/ZOMATO-CLONE/`
 2. Open `index.html` in your web browser to view the application.
 
-### Screenshots (Optional)
-Include screenshots of your application to provide visual context.
+
 
 ### Contributing
 Feel free to contribute to this project by forking it and submitting a pull request. Please follow the project's coding conventions and guidelines.
 
-### License
-This project is licensed under the [MIT License](link-to-license).
-
----
-
-Make sure to replace placeholders such as `your-username`, `repository-name`, and `link-to-license` with actual information relevant to your project. This README format will help users understand the purpose of your project, its features, and how they can contribute or use it.
 
 
 
